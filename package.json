@@ -1,0 +1,58 @@
+{
+  "name": "extracto-mcp",
+  "version": "0.1.0",
+  "description": "Model Context Protocol (MCP) server for Extracto — give Claude, Cursor, and any MCP client the ability to turn a URL plus a schema into validated, typed JSON.",
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "extracto",
+    "web-scraping",
+    "scraper",
+    "extraction",
+    "structured-data",
+    "llm",
+    "ai",
+    "claude",
+    "cursor",
+    "html-to-json"
+  ],
+  "homepage": "https://getextracto.dev",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/massanaRoger/extracto-mcp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/massanaRoger/extracto-mcp/issues"
+  },
+  "license": "MIT",
+  "author": "Extracto",
+  "type": "module",
+  "bin": {
+    "extracto-mcp": "./dist/index.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsx src/index.ts",
+    "typecheck": "tsc --noEmit",
+    "start": "node dist/index.js",
+    "prepublishOnly": "npm run typecheck && npm run build"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "zod": "^3.25.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.19.42",
+    "tsup": "^8.3.5",
+    "tsx": "^4.19.2",
+    "typescript": "^5.6.3"
+  }
+}
