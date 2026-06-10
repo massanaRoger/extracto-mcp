@@ -1,7 +1,7 @@
 {
   "name": "extracto-mcp",
-  "version": "0.1.1",
-  "mcpName": "io.github.massanaroger/extracto-mcp",
+  "version": "0.1.2",
+  "mcpName": "io.github.massanaRoger/extracto-mcp",
   "description": "Model Context Protocol (MCP) server for Extracto — give Claude, Cursor, and any MCP client the ability to turn a URL plus a schema into validated, typed JSON.",
   "keywords": [
     "mcp",

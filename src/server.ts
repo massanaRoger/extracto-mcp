@@ -59,7 +59,7 @@ function errText(err: unknown): {
 export function buildServer(client: ExtractoClient): McpServer {
   const server = new McpServer({
     name: 'extracto',
-    version: '0.1.1',
+    version: '0.1.2',
   });
 
   server.registerTool(
