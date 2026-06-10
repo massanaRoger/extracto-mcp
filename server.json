@@ -1,0 +1,43 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.massanaroger/extracto-mcp",
+  "description": "Turn any URL plus a schema into validated, typed JSON from Claude, Cursor, and any MCP client. Powered by the Extracto extraction API.",
+  "repository": {
+    "url": "https://github.com/massanaRoger/extracto-mcp",
+    "source": "github"
+  },
+  "version": "0.1.1",
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "extracto-mcp",
+      "version": "0.1.1",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "EXTRACTO_API_KEY",
+          "description": "Your Extracto API key from https://app.getextracto.dev/keys",
+          "isRequired": true,
+          "isSecret": true,
+          "format": "string"
+        },
+        {
+          "name": "EXTRACTO_BASE_URL",
+          "description": "Override the API host (defaults to https://app.getextracto.dev)",
+          "isRequired": false,
+          "isSecret": false,
+          "format": "string"
+        },
+        {
+          "name": "EXTRACTO_TIMEOUT_MS",
+          "description": "Per-request timeout in milliseconds (default 90000)",
+          "isRequired": false,
+          "isSecret": false,
+          "format": "string"
+        }
+      ]
+    }
+  ]
+}
